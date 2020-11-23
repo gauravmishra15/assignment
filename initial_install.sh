@@ -3,7 +3,7 @@
 
 
 ##initiate pipenv
-
+pipenv --three
 
 # Must be done in this order
 pipenv install -e p3

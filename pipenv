@@ -1,0 +1,18 @@
+[[source]] 
+url = "https://$USERNAME:'${PASSWORD}'@localpypi.example.com/simple"
+verify_ssl = true 
+name = “localpypi"
+
+[packages] 
+p3 = {version=“>1.2,<2.1“, index=“localpypi”} 
+p2 = {version=“>1.2,<2.1“, index=“localpypi”} 
+p1 = {version=“>1.2,<2.1“, index=“localpypi”} 
+Boto3 = “*”
+require = "*"
+
+## OR 
+## p2 = {ref = "5d80mhw7234923nldu9s8uj7238ff”,git = "git://github.com/gauravmishra15/assignment/P2.git"}
+## Boto3 = “*”
+
+[require]
+python_version=“3.4”
